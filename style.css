@@ -22,43 +22,24 @@ justify-content: center;
     display: flex;
     justify-content: center;
     font-size: xx-large;
-
 }
 
-  .circle{
-    position:absolute;
-   
-     /* width: 50;
-    height: 50; */
-    border-radius: 60px; 
-     -moz-border-radius: 60px;
-    -webkit-border-radius: 60px; 
-}  
+.wheel {
+  margin-top: 300px;
+  display: block;
+  z-index: -1;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-image: conic-gradient(
+      green 60deg, 
+      purple 0 120deg, 
+      orange 0 180deg,
+      red 0 240deg,
+      blue 0 300deg,
+      yellow 0 360deg);
+}
 
- #yellow{
-    border-right:60px solid yellow;
-    border-top:60px solid transparent;
-    border-left:60px solid transparent;
-    border-bottom:60px solid transparent;
-} 
 
- #orange{
-    border-right:60px solid transparent;
-  border-top:60px solid orange;
-  border-left:60px solid transparent;
-  border-bottom:60px solid transparent;
-} 
 
- #red{
-      border-right:60px solid transparent;
-  border-top:60px solid transparent;
-  border-left:60px solid red;
-  border-bottom:60px solid transparent;
-} 
-
- #purple{
-    border-right:60px solid transparent;
-  border-top:60px solid transparent;
-  border-left:60px solid transparent;
-  border-bottom:60px solid purple;
-} 

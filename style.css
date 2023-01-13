@@ -1,9 +1,9 @@
 
-  main{
+  /* main{
 display: flex;
 justify-content: center;
 align-items: center;
-}  
+}   */
 
   .button {
     position: relative;
@@ -69,8 +69,14 @@ button{
 
 .headercontainer{
     display: flex;
-    justify-content: center;
-    font-size: xx-large;
+    justify-content: space-evenly;
+    font-size:xx-large;
+    color: black;
+}
+
+header img{
+  height: 100px;
+  width: 100px;
 }
 
 footer{
@@ -78,8 +84,18 @@ footer{
  padding-top: 100px;
 }
 
+.wheel-container{
+  display: grid;
+  padding-left: 105px;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+
+
 .wheel {
-  display: flex;
+  justify-self: right;
+  align-self: right;
   width: 400px;
   height: 400px;
   border-radius: 50%;
@@ -90,6 +106,12 @@ footer{
       rgb(178, 7, 7) 0 240deg,
       rgb(4, 4, 174) 0 300deg,
       gold 0 360deg);
+}
+
+#Yellows{
+align-self: center;
+justify-self: center;
+
 }
 
 

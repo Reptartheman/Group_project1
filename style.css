@@ -86,8 +86,9 @@ footer{
 
 .wheel-container{
   display: grid;
+  grid-auto-rows: 500px;
   padding-left: 105px;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   grid-gap: 20px;
 }
 
@@ -108,9 +109,14 @@ footer{
       gold 0 360deg);
 }
 
-#Yellows{
-align-self: center;
-justify-self: center;
+.item1{
+  grid-row: 1 / span 2;
+
+
+}
+
+.item2{
+  grid-row: 2 / span 1;
 
 }
 

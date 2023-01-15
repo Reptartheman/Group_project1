@@ -85,18 +85,15 @@ footer{
 }
 
 .wheel-container{
-  display: grid;
-  grid-auto-rows: 500px;
-  padding-left: 105px;
-  grid-template-columns: auto auto auto;
-  grid-gap: 20px;
-}
+display: grid;
+grid-template-columns: repeat(7, 2fr);
+} 
 
 
 
 .wheel {
-  justify-self: right;
-  align-self: right;
+  justify-self: center;
+  align-self: center;
   width: 400px;
   height: 400px;
   border-radius: 50%;
@@ -109,16 +106,46 @@ footer{
       gold 0 360deg);
 }
 
-.item1{
-  grid-row: 1 / span 2;
-
-
-}
-
-.item2{
-  grid-row: 2 / span 1;
+.item{
+  justify-self: center;
 
 }
 
+#yellows{
+  border: solid gold;
+  border-radius: 10px;
+  margin-bottom: 230px;
+}
+
+
+#oranges{
+  border: solid darkorange;
+  border-radius: 10px;
+  margin-bottom: 230px;
+}
+
+#reds{
+  border: solid rgb(178, 7, 7);
+  border-radius: 10px;
+  margin-bottom: 230px;
+}
+
+#greens{
+  border: solid green;
+  border-radius: 10px;
+  margin-bottom: 230px;
+}
+
+#purples{
+  border: solid indigo;
+  border-radius: 10px;
+  margin-bottom: 230px;
+}
+
+#blues{
+  border: solid rgb(4, 4, 174);
+  border-radius: 10px;
+  margin-bottom: 230px;
+}
 
 

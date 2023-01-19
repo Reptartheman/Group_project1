@@ -55,7 +55,7 @@ spinBtn.onclick = function() {
     wheel.style.transform = "rotate(" + rotation + "deg)";
     rotation = -1 * rotation
     let result = rng%360;
-    
+
 // the function below grabs the data from the API
 function getData(){
     fetch(fruitFetch)
@@ -67,6 +67,7 @@ function getData(){
      console.log(data.calories);
      fruitDisplay.append("Calories:" + data.calories);
      localStorage.setItem("Calories", data.calories);
+
     })
     fetch(requestUrl)
     .then(function(response){
@@ -78,16 +79,19 @@ function getData(){
 })
 }
 
+function getLocalStorage(){
+    var storage = localStorage.getItem("Calories"); 
+    if (storage !== null ){
+        fruitDisplay.append("Calories:" + storage);
+    }  
+    
+}
+getLocalStorage();
 
 
 
-
-
-
-
-
-
-
+// TO DO: store results in an Array. 
+// TO DO: 
 // We will need conditional statements to randomly select a color from each <div>.
 // A new function will nest the conditional statements for the colors to be removed from the <div>.
 // Button should be disabled after four clicks.
